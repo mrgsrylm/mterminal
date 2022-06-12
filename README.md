@@ -20,5 +20,13 @@ Manually
 ZSH_THEME="gusrylmubarok"
 ```
 
+## Note
+I use icon on this theme from ![spaceship-prompt](https://github.com/spaceship-prompt/spaceship-prompt)
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
 ## License
-The MIT License
+[MIT](https://choosealicense.com/licenses/mit/)
