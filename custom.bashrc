@@ -75,13 +75,7 @@ else
 fi
 unset color_prompt force_color_prompt
 
-# GO
-export PATH=$PATH:/usr/local/go/bin
-## GO PATH
-export PATH=$PATH:$HOME/go/bin
-
 # SDKMAN
-# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
@@ -90,12 +84,25 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# FLUTTER
-export PATH=$PATH:/home/d4rksist3r/tool/flutter/bin
-## Flutter Pub
+# GO
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
+
+# Flutter
+export PATH=$PATH:$HOME/flutter/bin
 export PATH=$PATH:$HOME/.pub-cache/bin
 
-# RUBY
+# Google Chrome
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+
+# Android
+export PATH=$PATH:$HOME/Android/Sdk/platform-tools
+
+# rbenv
+export PATH=$PATH:$HOME/.rbenv/bin
+eval "$(/home/cosmicer/rbenv/bin/rbenv init - zsh)"
+
+# Ruby
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 
