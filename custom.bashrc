@@ -69,9 +69,9 @@ git_prompt() {
 ## Custom color prompt
 # Style Schema on bash terminal
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[00m\][\[\033[01;34m\]\W\[\033[00m\]]\[\033[00m\>
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[00m\][\[\033[01;34m\]\W\[\033[00m\]$(git_prompt)\n[$] '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\W:$(git_branch)\n[$] '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;37m\]\u\[\033[01;32m\]@\[\033[01;37m\]\h\[\033[00m\]:\W\[\033[01;32m\]$(git_prompt)\n[$] '
 fi
 unset color_prompt force_color_prompt
 
